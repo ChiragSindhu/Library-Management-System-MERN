@@ -137,6 +137,3 @@ async function ConnectToDatabase()
   await client.connect();
   console.log("Database Connected");
 }
-
-const functions = require('firebase-functions');
-exports.api = functions.https.onRequest(app)
