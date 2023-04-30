@@ -1,0 +1,38 @@
+#searchtab
+{
+    width: 100%;
+    margin: 0px 0px 0px 50%;
+    padding: 30px 10vw 0px 10vw;
+    transform: translateX(-50%);
+    min-height: 60vh;
+
+    background-color: orange;
+}
+
+#searchbar 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchtabtitle{margin-left: 10%; color: white;}
+
+#searchinput 
+{
+    border:solid 3px #fff;
+    box-sizing:border-box;
+    font-size:2em;
+    height:2em;
+    padding:.5em;
+    outline: solid orange 0px;  
+    transition:all 2s ease-in;
+    width:50vw;
+
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+#searchinput:focus {
+    border:solid 3px #09f;   
+}

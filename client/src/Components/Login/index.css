@@ -1,0 +1,102 @@
+#loginpage
+{
+    height: 100vh;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./demo.png") repeat scroll 0% 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centercard
+{
+    width: 500px;
+
+    background: white;
+    padding: calc(4 * .5rem);
+    border-radius: 4px;
+    border: 3px solid var(#fab700, currentColor);
+    box-shadow: .5rem .5rem 0 var(#fab700, currentColor);
+}
+
+#icon, #cardtitle
+{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#cardtitle
+{
+    width: 100%;
+    margin-top: 10px;
+
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#cardinput
+{
+    width: 100%;
+    position: relative;
+    margin: 30px 0 0 0px;
+}
+
+#cardinputfield
+{
+    width: 80%;
+    border: 1px gray solid;
+    border-radius: 2px;
+    padding: 12px;
+    font-size: 17px;
+
+    color: rgb(98, 98, 98);
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#cardinputfield:focus + #cardinputname { top: -30px; font-size: 16px; left: 40px; background-color: transparent; }
+
+#cardinputname
+{
+    position: absolute;
+    top: -9px;
+    left: 50px;
+
+    font-size: 14px;
+    background-color: white;
+    padding: 2px 4px 2px 4px;
+
+    transition: 0.3s;
+}
+
+#loginbutton
+{
+    width: 87%;
+    margin: 30px 0 20px 50%;
+    padding: 7px;
+    transform: translateX(-50%);
+
+    color: white;
+    background-color: #fab700;
+
+    font-size: 17px;
+    text-align: center;
+
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#loginbutton:hover
+{
+    background-color: #ffd500;
+}
+
+#loginbutton:active
+{
+    background-color: #ffa200;
+}

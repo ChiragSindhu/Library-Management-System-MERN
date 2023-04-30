@@ -1,0 +1,152 @@
+#mainpage
+{
+    overflow: hidden;
+}
+
+a
+{
+    height: 100%;
+}
+
+#leftnavoption
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+    position: absolute;
+    bottom: 5vw;
+}
+
+#navbarcenter
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+
+    font-size: 30px;
+    color: white;
+    background-color: rgba(199, 133, 19, 0.266);
+    padding: 5px;
+    border-radius: 10px;
+    letter-spacing: -2px;
+}
+
+#topnav
+{
+    width: 100%;
+    height: 5em;
+
+    background-color: rgb(54, 54, 54);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mainheading
+{
+    padding: 5px;
+    margin: 20px 0px 0px 15px;
+
+    font-size: 22px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    
+    color: white;
+    cursor: pointer;
+}
+
+#navbar
+{
+    position: absolute;
+    
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+
+    align-items: center;
+}
+
+#navbaritem
+{
+    width: 5em;
+    height: 100%;
+    padding: 0px 20px 0px 20px;
+
+    background-color: rgba(55, 55, 55, 0);
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center;
+
+    color: white;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#navbaritem:hover
+{
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+
+#loginbackground
+{
+    width: 100%;
+    height: 100vh;  
+    
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--backgroundImage);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 13px;
+    max-width: 30vw;
+    overflow: scroll;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltip .tooltiptext {
+    bottom: 100%;
+    margin-left: 50%; /* Use half of the width (120/2 = 60), to center the tooltip */
+    transform: translateX(-50%);
+  }
